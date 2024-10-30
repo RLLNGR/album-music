@@ -1,0 +1,114 @@
+html{
+   margin: 0;
+}
+body{
+   font-family: Helvetica, sans-serif;
+   background: #00823c;
+   color: white;
+   margin: 0px;
+   padding: 32px;
+}
+
+h1, h4, h5{
+   font-family: impact;
+   color: white;
+   text-transform: uppercase; 
+}
+
+h1, h2{
+   margin: 0;
+}
+
+h1{
+   font-size: 7.2vw;
+   line-height: normal;
+}
+
+h2{
+   font-weight: 100;
+}
+
+h4{
+   font-size: 1.6vmax;
+   font-weight: 400;
+   margin: 32px 0 16px 0;
+}
+
+h5{
+   text-align: center;
+   margin: 0 ;
+   font-size: 1.2vmax;
+}
+
+ol{
+   font-size:1.4vmax;
+   margin: 0;
+}
+
+li{
+   margin: 4px 0;  
+}
+
+li i{
+   font-size: 1.2vmax;
+   font-weight: 100;
+}
+
+a{
+   color: white;
+   text-decoration: none;
+}
+
+a:hover{
+   color: darkgray;
+}
+
+ul{
+   display: flex;
+   gap: 32px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+img{
+   width: 100%;
+   height: 200px;
+   margin: auto;
+   object-fit: contain;
+}
+
+div{
+   display: flex;
+   width: 100%;
+}
+
+div img{
+   width: 50%;
+   height: 100%;
+}
+
+div div{
+   flex-direction: column;
+   width: 50%;
+   padding: 32px;
+}
+
+#id{
+   /* L'id est pour un élément unique ! On utilise son nom nom qu'une fois: . */
+}
+.classe{
+   /* La classe est utilisée quand on utilise plusieurs fois le même élément */
+}
+#header{
+
+}
+
+#discography{
+}
+
+.carte-album{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
