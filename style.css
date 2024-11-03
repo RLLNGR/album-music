@@ -2,11 +2,10 @@ html{
    margin: 0;
 }
 body{
-   font-family: Helvetica, sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    background: #00823c;
    color: white;
    margin: 0px;
-   padding: 32px;
 }
 
 h1, h4, h5{
@@ -36,12 +35,14 @@ h4{
 
 h5{
    text-align: center;
-   margin: 0 ;
-   font-size: 1.2vmax;
+   margin: 16px 0;
+   font-size: 2vmax;
+   transition: color .3s ease-in-out;
 }
 
 ol{
-   font-size:1.4vmax;
+   padding-left: 24px;
+   font-size: 1.4vmax;
    margin: 0;
 }
 
@@ -57,58 +58,93 @@ li i{
 a{
    color: white;
    text-decoration: none;
+   transition: all .3s ease-in-out;
 }
 
 a:hover{
-   color: darkgray;
+   color: rgb(170, 170, 150);
 }
 
-ul{
+img{
+   border-radius: 2px;
+}
+
+/* ID & Classes */
+#id{
+   /* L'id est pour un élément unique ! On utilise son nom nom qu'une fois: . */
+}
+
+.class{
+   /* La class est utilisée quand on utilise plusieurs fois le même élément */
+}
+
+#header{
    display: flex;
-   gap: 32px;
+   gap: 16px;
+   width: 100%;
+}
+
+#image{
+   width: 50%;
+   height: 100%;
+}
+
+#image img{
+   width: 100%;
+   height: 100%;
+}
+
+#text{
+   padding: 32px;
+}
+
+#discographie{
+   display: flex;
+   flex-direction: column;
+   padding: 64px 32px;
+}
+
+#discographie h4{
+   font-size: 3.2vw;
+   text-align: center;
+}
+
+#other-albums{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 24px;
    list-style: none;
    margin: 0;
    padding: 0;
 }
 
-img{
-   width: 100%;
-   height: 200px;
-   margin: auto;
-   object-fit: contain;
-}
-
-div{
-   display: flex;
-   width: 100%;
-}
-
-div img{
-   width: 50%;
-   height: 100%;
-}
-
-div div{
-   flex-direction: column;
-   width: 50%;
-   padding: 32px;
-}
-
-#id{
-   /* L'id est pour un élément unique ! On utilise son nom nom qu'une fois: . */
-}
-.classe{
-   /* La classe est utilisée quand on utilise plusieurs fois le même élément */
-}
-#header{
-
-}
-
-#discography{
-}
-
 .carte-album{
    display: flex;
+   width: 32%;
    flex-direction: column;
    align-items: center;
+   justify-content: space-around;
+}
+
+.carte-album img{
+   width: 100%;
+   object-fit: contain;
+   filter: grayscale(100%) sepia(80%) contrast(1.1) saturate(.5);
+   transition: filter .6s ease-in-out;
+}
+.carte-album:hover img{
+   filter: grayscale(0%);
+}
+.carte-album:hover h5{
+   color: #aaaa96;
+}
+
+.carte-album a{
+   width: 100%;
+   height: 100%;
+}
+.carte-album h5{
+   width: 100%;
+   object-fit: contain;
 }
