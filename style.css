@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 html{
    margin: 0;
    background: #e2001a;
@@ -150,7 +151,7 @@ img{
    object-fit: contain;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+
 
 header {
   background-image: url('https://rllngr.github.io/La-Toile-Jukebox-Code-Makers/assets/header.svg');
